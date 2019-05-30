@@ -46,7 +46,6 @@ public class CountryList extends AppCompatActivity {
 
         SharedPreferences m = PreferenceManager.getDefaultSharedPreferences(this);
         response = m.getString("response", "response");
-        Log.e("someOtherrrrwwwwr", response);
         CountryList=new ArrayList<>();
         {
             try {
