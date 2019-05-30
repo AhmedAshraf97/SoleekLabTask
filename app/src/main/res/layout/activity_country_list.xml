@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryList">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CountryListText"
+        android:text="List of Countries"
+        android:layout_marginLeft="10dp"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nova2"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Button_Country_Logout"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/button"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <ListView
+        android:layout_below="@+id/CountryListText"
+        android:id="@+id/CountryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

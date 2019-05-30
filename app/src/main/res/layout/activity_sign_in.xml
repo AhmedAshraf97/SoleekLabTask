@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/Image_SignIn_Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TextView_SignIn_LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp"
+        android:text="LogIn To Soleek Test"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:fontFamily="@font/nova1"/>
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_SignIn_LogIn"
+        android:hint="Enter Your Email"
+        android:id="@+id/EditText_SignIn_Email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/EditText_SignIn_Password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_SignIn_Email"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_SignIn_Password"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Button_SignIn_Confirm"
+        android:layout_marginLeft="130dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+        android:text="Confirm"
+        android:textSize="18dp"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button_SignIn_Confirm"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Button_SignIn_Google"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+        android:text="Sign in with google"
+        android:textSize="18dp"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button_SignIn_Confirm"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Button_SignIn_Facebook"
+        android:layout_marginLeft="200dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+        android:text="Sign in with facebook"
+        android:textSize="18dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="440dp"></LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Button_SignIn_SignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/Button_SignIn_Confirm"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/button"
+        android:text="SignUp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/TextView_SignIn_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button_SignIn_Confirm"
+        android:layout_marginTop="90dp"
+        android:text="New User? Register Here"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
